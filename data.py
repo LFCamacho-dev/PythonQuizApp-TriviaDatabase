@@ -7,7 +7,7 @@ parameters = {
 response = requests.get(url="https://opentdb.com/api.php", params=parameters)
 response.raise_for_status()
 data = response.json()
-print(len(data["results"]))
+# print(len(data["results"]))
 question_data = data["results"]
 
 # question_data = [
@@ -58,7 +58,8 @@ question_data = data["results"]
 #         "category": "Science: Computers",
 #         "type": "boolean",
 #         "difficulty": "medium",
-#         "question": "All program codes have to be compiled into an executable file in order to be run. This file can then be executed on any machine.",
+#         "question": "All program codes have to be compiled into an executable file
+#         in order to be run. This file can then be executed on any machine.",
 #         "correct_answer": "False",
 #         "incorrect_answers": [
 #             "True"
